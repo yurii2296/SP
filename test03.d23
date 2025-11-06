@@ -1,0 +1,16 @@
+PROGRAM pr3; 
+DATA LONG INT _aAA0 , _bBB1 , _cAA2 , _cBB3 , _vAL4;
+BEGIN
+  SCAN ( _aAA0 );
+  SCAN ( _bBB1 );
+
+  FOR _bBB1 :> _cAA2 DOWNTO _aAA0 DO
+    PRINT ( _cAA2 MUL _cAA2 );
+
+  0 :> _vAL4;
+  FOR aAA0 :> _cAA2 DOWNTO 1 DO
+    FOR bBB1 :> _cBB3 DOWNTO 1 DO
+       _vAL4 + 1 :> _vAL4;
+  PRINT ( _vAL4 );
+
+END

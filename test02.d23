@@ -1,0 +1,35 @@
+PROGRAM pr2; 
+DATA LONG INT _aAA0 , _bBB1 , _cCC2 , _mAX3;
+BEGIN
+  SCAN ( _aAA0 );
+  SCAN ( _bBB1 );
+  SCAN ( _cCC2 );
+
+  IF (_aAA0 > _bBB1 || _aAA0 EQ _bBB1) AND (_aAA0 > _cCC2 || _aAA0 EQ _cCC2) {
+    _aAA0 :> _mAX3;
+  } ELSE IF (_bBB1 > _aAA0 || _bBB1 EQ _aAA0) AND (_bBB1 > _cCC2 || _bBB1 EQ _cCC2) {
+    _bBB1 :> _mAX3;
+  } ELSE {
+    _cCC2 :> _mAX3;
+  }
+  PRINT ( _mAX3 );
+
+  IF ( _aAA0 EQ _bBB1 ) AND ( _aAA0 EQ _cCC2 ) AND ( _bBB1 EQ _cCC2 ) {
+    PRINT ( 1 );
+  } ELSE {
+    PRINT ( 0 );
+  }
+    
+  IF NOT (_aAA0 > 0 || _aAA0 EQ 0) OR NOT (_bBB1 > 0 || _bBB1 EQ 0) OR NOT (_cCC2 > 0 || _cCC2 EQ 0) {
+    PRINT ( -1 );
+  } ELSE {
+    PRINT ( 0 );
+  }
+
+  IF (_aAA0 > ( _bBB1 + _cCC2 ) || _aAA0 EQ ( _bBB1 + _cCC2 )) {
+    PRINT ( 10 );
+  } ELSE {
+    PRINT ( 0 );
+  }
+ 
+END

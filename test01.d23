@@ -1,0 +1,19 @@
+PROGRAM pr1; 
+DATA LONG INT _aAA0 , _bBB1 , _xXX2 , _yYY3;
+BEGIN
+  SCAN ( _aAA0 );
+  SCAN ( _bBB1 );
+  
+  PRINT ( _aAA0 + _bBB1 );
+  PRINT ( _aAA0 SUB _bBB1 );
+  PRINT ( _aAA0 MUL _bBB1 );
+  PRINT ( _aAA0 DIV _bBB1 );
+  PRINT ( _aAA0 % _bBB1 );
+
+  (_aAA0 SUB _bBB1) MUL 10 + (_aAA0 + _bBB1) DIV 10 :> _xXX2;
+  _xXX2 + _xXX2 % 10 :> _yYY3;
+
+  PRINT ( _xXX2 );
+  PRINT ( _yYY3 );
+
+END
