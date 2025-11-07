@@ -4,8 +4,9 @@ BEGIN
   SCAN ( _aAA0 );
   SCAN ( _bBB1 );
 
-  FOR _bBB1 :> _cAA2 DOWNTO _aAA0 DO
+  FOR _bBB1 :> _cAA2 DOWNTO _aAA0 DO {
     PRINT ( _cAA2 MUL _cAA2 );
+  }
 
   0 :> _vAL4;
   FOR aAA0 :> _cAA2 DOWNTO 1 DO {
