@@ -26,7 +26,7 @@ BEGIN
     PRINT ( 0 );
   }
 
-  IF (_aAA0 > ( _bBB1 + _cCC2 ) || _aAA0 EQ ( _bBB1 + _cCC2 )) {
+  IF NOT (_aAA0 < ( _bBB1 + _cCC2 )) {
     PRINT ( 10 );
   } ELSE {
     PRINT ( 0 );
