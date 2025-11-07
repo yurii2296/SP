@@ -20,7 +20,7 @@ BEGIN
     PRINT ( 0 );
   }
     
-  IF NOT (_aAA0 > 0 || _aAA0 EQ 0) || NOT (_bBB1 > 0 || _bBB1 EQ 0) || NOT (_cCC2 > 0 || _cCC2 EQ 0) {
+  IF (_aAA0 < 0) || (_bBB1 < 0) || (_cCC2 < 0) {
     PRINT ( SUB 1 );
   } ELSE {
     PRINT ( 0 );

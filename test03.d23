@@ -8,9 +8,12 @@ BEGIN
     PRINT ( _cAA2 MUL _cAA2 );
 
   0 :> _vAL4;
-  FOR aAA0 :> _cAA2 DOWNTO 1 DO
-    FOR bBB1 :> _cBB3 DOWNTO 1 DO
+  FOR aAA0 :> _cAA2 DOWNTO 1 DO {
+    FOR bBB1 :> _cBB3 DOWNTO 1 DO {
        _vAL4 + 1 :> _vAL4;
+    }
+  }
+
   PRINT ( _vAL4 );
 
 END
