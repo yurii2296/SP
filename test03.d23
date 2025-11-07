@@ -1,4 +1,4 @@
-PROGRAM pr3; 
+PROGRAM _pRO0; 
 DATA LONG INT _aAA0 , _bBB1 , _cAA2 , _cBB3 , _vAL4;
 BEGIN
   SCAN ( _aAA0 );
